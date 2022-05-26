@@ -126,6 +126,7 @@ class NumClassCheckHook(Hook):
         """
         model = runner.model
         dataset = runner.data_loader.dataset
+        
         if dataset.CLASSES is None:
             runner.logger.warning(
                 f'Please set `CLASSES` '
